@@ -20,7 +20,7 @@ header {
 	border-bottom: 1px solid #CD5C5C;
 }
 .logo {
-	color: #ffffff;
+	color: #CD5C5C;
 	font-weight: bold;
 	margin-left: auto;
 	letter-spacing: 4px;
@@ -31,7 +31,7 @@ header {
 	font-size: 22px;
 }
 .hero_header {
-	color: #ff0000;
+	color: #CD5C5C;
 	text-align: center;
 	margin: 0;
 	letter-spacing: 4px;
