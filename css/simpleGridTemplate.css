@@ -36,17 +36,7 @@ header {
 	margin: 0;
 	letter-spacing: 4px;
 }
-/* About Section */
-.text_column {
-	width: 90%;
-	text-align: left;
-	font-weight: lighter;
-	line-height: 25px;
-	float: left;
-	padding-left: 20px;
-	padding-right: 20px;
-	color: white;
-}
+
 .gallery {
 	clear: both;
 	display: inline-block;
