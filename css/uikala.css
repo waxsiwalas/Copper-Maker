@@ -1,9 +1,13 @@
-@charset "UTF-8";
-/* Body */
+<!DOCTYPE html>
+<html>
+<head>
+<style>
 body {
-	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
-	background-color: #FFFFFF;
-	margin: 0;
+  background-color: coral;
+}
+</style>
+</head>
+<body>
 }
 /* Container */
 .container {
