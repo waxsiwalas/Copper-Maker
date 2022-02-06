@@ -18,9 +18,27 @@
 	<p>&nbsp; </p>
 	<p>Ǧiànakatsi. Thank you for continuing to this page. Below are some samples of what I can do with audio and pictures, relating to your language.</p>
 	<p>
-		<audio id="b" src="01-b.mp3" preload="metadata" type="audio/mpeg">
-   Your browser does not support the audio element.
+		<audio id="myAudio">
+  <source src="01-b.mp3" type="audio/ogg">
+  <source src="01-b.mp3horse.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
 </audio>
-<a class="btn" id="b">b</a></p>
+
+<p>Click the buttons to play or pause the audio.</p>
+
+<button onclick="playAudio()" type="button">Play Audio</button>
+<button onclick="pauseAudio()" type="button">Pause Audio</button> 
+
+<script>
+var x = document.getElementById("myAudio"); 
+
+function playAudio() { 
+  x.play(); 
+} 
+
+function pauseAudio() { 
+  x.pause(); 
+} 
+</script></p>
 </body>
 </html>
