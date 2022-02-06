@@ -18,23 +18,19 @@
 	<p>&nbsp; </p>
 	<p>Ǧiànakatsi. Thank you for continuing to this page. Below are some samples of what I can do with audio and pictures, relating to your language.</p>
 	<p>
-		<script>
+	  <input type="button" value="b"  onclick="play('audio1')">
+	  <input type="button" value="p"  onclick="play('audio2')">
+	  <input type="button" value="m"  onclick="play('audio4')">
+	  <input type="button" value="p̓"  onclick="play('audio3')">
+<script>
 function play(element){
    var audio = document.getElementById(element);
    audio.play();
              }
 </script>
-
-<input type="button" value="b"  onclick="play('audio1')">
 <audio id="audio1" src="01-b.MP3" ></audio>
-
-<input type="button" value="p"  onclick="play('audio2')">
 <audio id="audio2" src="02-p.MP3" ></audio></p>
-	
-	<input type="button" value="p̓"  onclick="play('audio3')">
 <audio id="audio3" src="03-p̓.MP3" ></audio>
-
-<input type="button" value="m"  onclick="play('audio4')">
 <audio id="audio4" src="04-m.mp3" ></audio></p>
 </body>
 </html>
