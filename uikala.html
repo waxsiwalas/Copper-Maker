@@ -18,48 +18,10 @@
 	<p>&nbsp; </p>
 	<p>Ǧiànakatsi. Thank you for continuing to this page. Below are some samples of what I can do with audio and pictures, relating to your language.</p>
 	<p>
-		<audio id="myAudio">
-  <source src="01-b.mp3" type="audio/ogg">
-  <source src="01-b.mp3horse.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
+		<!--HTML-->
+<audio id="audio"></audio>
+<button onclick="play('01-b.mp3')">Play Sound 1</button>
 
-<p>Click the buttons to play the audio.</p>
-
-<button onclick="playAudio()" type="button">b</button>
-
-<script>
-var x = document.getElementById("myAudio"); 
-
-function playAudio() { 
-  x.play(); 
-} 
-
-function pauseAudio() { 
-  x.pause(); 
-} 
-</script>
-	
-	<audio id="myAudio">
-  <source src="02-p.mp3" type="audio/ogg">
-  <source src="02-p.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
-
-<p>Click the buttons to play the audio.</p>
-
-<button onclick="playAudio()" type="button">p</button>
-
-<script>
-var x = document.getElementById("myAudio"); 
-
-function playAudio() { 
-  x.play(); 
-} 
-
-function pauseAudio() { 
-  x.pause(); 
-} 
-</script></p>
+<button onclick="play('02-p.mp3')">Play Sound 2</button></p>
 </body>
 </html>
