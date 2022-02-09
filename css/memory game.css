@@ -67,6 +67,7 @@ cards.forEach(card => card.addEventListener('click', flipCard));
   transform: rotateY(180deg);
 }
 /* styles.css */
+
 .memory-game {
   width: 640px;
   height: 640px;
@@ -88,6 +89,18 @@ cards.forEach(card => card.addEventListener('click', flipCard));
 }
 /* styles.css */
 
+.memory-card {
+  width: calc(25% - 10px);
+  height: calc(33.333% - 10px);
+  margin: 5px;
+  position: relative;
+  box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+  transform: scale(1);
+  transform-style: preserve-3d;
+ transition: transform .5s;
+}
+/* styles.css */
+
 .front-face,
 .back-face {
   width: 100%;
@@ -98,4 +111,25 @@ cards.forEach(card => card.addEventListener('click', flipCard));
   background: #1C7CCC;
  backface-visibility: hidden;
 }
+.front-face {
+  transform: rotateY(180deg);
+}
+ // scritps.js
+
+  const cards = document.querySelectorAll('.memory-card');
+
+ let hasFlippedCard = false;
+ let firstCard, secondCard;
+
+  function flipCard() {
+   this.classList.toggle('flip');
+   this.classList.add('flip');
+
+   if (!hasFlippedCard) {
+     hasFlippedCard = true;
+     firstCard = this;
+   }
+  }
+
+cards.forEach(card => card.addEventListener('click', flipCard));
 
