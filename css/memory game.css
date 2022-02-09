@@ -66,3 +66,14 @@ cards.forEach(card => card.addEventListener('click', flipCard));
 .memory-card.flip {
   transform: rotateY(180deg);
 }
+
+.memory-game {
+  width: 640px;
+  height: 640px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+ perspective: 1000px;
+}
+
+
