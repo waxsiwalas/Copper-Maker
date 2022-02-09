@@ -63,3 +63,6 @@ function flipCard() {
 }
 
 cards.forEach(card => card.addEventListener('click', flipCard));
+.memory-card.flip {
+  transform: rotateY(180deg);
+}
