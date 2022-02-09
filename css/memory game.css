@@ -86,4 +86,16 @@ cards.forEach(card => card.addEventListener('click', flipCard));
   transform: scale(1);
  transform-style: preserve-3d;
 }
+/* styles.css */
+
+.front-face,
+.back-face {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  position: absolute;
+  border-radius: 5px;
+  background: #1C7CCC;
+ backface-visibility: hidden;
+}
 
